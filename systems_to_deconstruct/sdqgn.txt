@@ -1,0 +1,84 @@
+SQDGN: a socially enhanced AI agent.
+Team SQDGN Draft v0.1
+Abstract
+The whitepaper introduced SQDGN, a decentralized AI-driven trading agent that leverages large language models (LLMs) for sourcing trades and integrates swarm intelligence via prediction markets to optimize decision- making. The system employs a unique governance mechanism where $SQDGN token holders vote on trade execution, with financial incentives tied to outcomes. This whitepaper outlines the system’s architecture, voting mechanics, tokenomics, and potential applications.
+Disclaimer
+This whitepaper is provided for informational purposes only and does not con- stitute a binding commitment or obligation by the authors or associated entities. The concepts and ideas presented are experimental in nature and are subject to change. There is no guarantee that the described mechanisms, systems, or features can or will be implemented as outlined, nor that they are technically or legally feasible in all jurisdictions.
+Readers are advised to conduct their own research and seek independent advice before participating in any activities related to this whitepaper. Any actions taken in relation to the content of this document are at the sole risk of the participant. The authors disclaim all liability for any losses, damages, or legal consequences arising directly or indirectly from the use or reliance on this whitepaper.
+Motivation
+The rapid advancement of large language models (LLMs) and AI agents with retrieval-augmented generation (RAG) capabilities has significantly broadened the range of use cases previously considered beyond the reach of automation. These technologies now play roles in areas such as data analysis, content gener- ation, and even complex decision-making tasks. However, the emergence of AI agents operating in high-stakes environments, particularly in financial trading and strategic operations face critical issues due to unpredictable reliability and lack of risk management.
+1
+
+One of the most pressing issues is the inherent unpredictability of LLMs, including their tendency to produce hallucinations—outputs that appear con- fident but are factually incorrect. Additionally, the opaque nature of model inference means that even when an LLM is carefully instructed to adhere to strict protocols, vulnerabilities remain. A recent experiment demonstrated how an AI agent tasked with controlling an on-chain wallet could be manipulated into exposing funds to potential loss through a sophisticated prompt exploit, resulting in a compromised $50,000 prize pot [1]. This underscores the need for innovative approaches to mitigate risk while leveraging AI capabilities.
+To address these challenges, we introduce SQDGN — an AI trading agent enhanced with swarm intelligence mechanisms, leveraging betting markets for collective decision-making and risk management. Betting markets have a proven track record of accurately forecasting outcomes in uncertain environments by aggregating diverse participant insights. For example, Polymarket have outper- formed traditional surveys in predicting a landslide win for Trump in the US presidential elections.
+By integrating LLM-driven data analysis (sourced from $SQD Network) with the predictive power of swarm intelligence, SQDGN is uniquely positioned to manage trading decisions with enhanced security and reliability. This ap- proach helps to mitigate the risks associated with AI autonomy by decentralizing decision-making and grounding it in the collective intelligence of market par- ticipants. The $SQDGN token plays a pivotal role in this ecosystem, enabling users to participate in and benefit from the risk-adjusted AI trades.
+Design
+Trade Selection Mechanism
+The SQDGN agent employs a hybrid approach for trade selection, combining rule-based methods with advanced models powered by large language mod- els (LLMs) and machine learning (ML). These models analyze on-chain data sourced from the $SQD Network, which may include user-contributed datasets. The agent identifies potential trade opportunities based on pre-defined crite- ria and adaptive insights from these models, ensuring a robust and dynamic decision-making process.
+Crowd Validation Mechanism
+SQDGN incorporates a decentralized crowd validation system to assess and validate the quality of AI-generated trade signals. This mechanism replaces traditional speculative betting with a prediction and validation protocol:
+Signal Generation: The AI agent generates a trade signal with associated parameters, such as confidence level (”alpha”), trade size, and expected impact. User Participation: Users with staked $SQDGN tokens can participate in validating the trade signal by voting ”Yes” (agreeing that the trade is valid and
+2
+
+likely profitable) or ”No” (disagreeing).
+Validation Score: The system aggregates votes to compute a validation score,
+reflecting the community’s collective confidence in the trade signal. Signals with insufficient confidence or contentious votes may be rejected or scaled down.
+Reward Distribution and Incentives
+The reward structure incentivizes participation while ensuring positive expected value (EV+) dynamics for all participants:
+Profitable Trade: If a validated trade generates profits:
+A portion of the profits is distributed among participants who voted ”Yes.” A portion of the ”No” voters’ staked tokens is redistributed to the ”Yes”
+voters and the treasury.
+Unprofitable Trade: If a validated trade incurs losses:
+A portion of the ”Yes” voters’ staked tokens is redistributed to ”No” voters. A smaller portion is allocated to the treasury.
+Participation Rewards: Even incorrect voters receive a smaller participation
+reward to encourage continued engagement and thoughtful decision-making. This structure fosters a non-zero-sum environment where both ”Yes” and
+”No” participants benefit from active and rational participation.
+Dynamic Reward Parameters
+The parameters governing validation, including reward distribution, market duration, and turnover thresholds, are dynamically determined based on the agent’s confidence score (”alpha”) and trade size. This ensures the system adapts to varying levels of risk and uncertainty.
+Model Selection by Users
+Participants can influence the AI decision-making framework by voting on the models used by the SQDGN agents. Over time, user-provided models can be incorporated into the system after passing rigorous quality checks. Owners of accepted models earn a share of the profits generated by their models, incen- tivizing high-quality contributions.
+Profit Sharing for Staked $SQDGN Holders
+A portion of the profits from validated trades is distributed among all staked $SQDGN holders, providing long-term utility and rewards for token holders. This ensures that even passive participants benefit from the system’s overall success and profitability.
+3
+
+Transparency and Accountability
+To ensure informed participation, the system provides users with detailed trade signal insights, including:
+Confidence scores (”alpha”).
+Trade size and projected outcomes.
+Historical performance of similar signals.
+A reputation system tracks user behavior and accuracy over time, rewarding
+consistent contributions and penalizing malicious or uninformed actions. This reinforces the system’s integrity and reliability while aligning incentives across stakeholders.
+Bootstrapping and Growth
+Bootstrapping and Growth
+Initial Strategy: Copy-Trading and AI Commentary
+To bootstrap the platform and attract initial users, the SQDGN system will start with a copy-trading mechanism. It will monitor trades made by well- known, high-performing wallets and replicate their actions while providing AI- generated textual commentary. This approach offers several advantages:
+Immediate Value: Users gain access to credible trades backed by the perfor- mance of proven wallets, ensuring early trust in the system.
+Community Engagement: The AI commentary explains the rationale behind each trade, sparking discussions and building a collaborative environment.
+Simplified Validation: Early validation markets focus on whether the copied trade aligns with community expectations, allowing users to familiarize them- selves with the process.
+Example public commentary shared via the bot:
+”Wallet X has executed a trade: 50,000 USDT for ETH. Historical analysis shows a 70% success rate on similar trades. Market senti- ment aligns with bullish trends. Stake your $SQDGN and participate in the vote: Will this trade succeed?”
+Social Media Integration
+The platform will leverage integration with X (formerly Twitter) to drive en- gagement and user acquisition:
+Public Announcements: The bot shares AI-generated commentaries on X, inviting users to stake $SQDGN and participate in validation markets.
+Community Discussions: Posts encourage users to engage in debates and share insights, increasing platform visibility and credibility.
+Live Updates: Real-time updates on voting outcomes and trade results main- tain user interest and highlight the platform’s dynamic nature.
+Example tweet:
+4
+
+\” New trade alert! Wallet X swapped 50,000 USDT for ETH. AI Analysis: High confidence in bullish market trends. Join the crowd validation: Stake $SQDGN and vote! #DeFi #AITrading [Platform Link]
+User Onboarding and Incentives
+To ensure strong initial participation, the platform will:
+Offer bonus rewards in $SQDGN for early stakers and validators.
+Provide educational content to simplify onboarding and explain trade vali-
+dation processes.
+Highlight top contributors through leaderboards, fostering a competitive and
+engaging environment.
+Scaling Towards Full Functionality
+As the user base grows, the platform will gradually transition to:
+Enabling full AI-driven trade selection mechanisms.
+Incorporating user-provided models for greater decentralization.
+Refining the voting and reward system to balance risk and reward optimally. This phased approach ensures steady growth, user retention, and platform
+credibility while minimizing risks during the early stages.
+References
+[1] Someone won $50k by making AI Hallucinate (Wild Story). https://www. youtube.com/watch?v=PCsJOoOnooo.
+5

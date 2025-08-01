@@ -1,0 +1,29 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Market data
+ccxt>=4.0.0  # Multi-exchange connectivity
+websocket-client>=1.6.0
+
+# Execution
+aiohttp>=3.8.0
+asyncio-throttle>=1.0.0
+
+# Risk analytics
+ta>=0.10.0  # Technical indicators for ATR
+pyfolio>=0.9.0  # Performance analytics
+
+# Data storage
+redis>=4.5.0  # Real-time data caching
+sqlalchemy>=2.0.0  # Trade history
+
+# Monitoring
+prometheus-client>=0.16.0
+structlog>=23.0.0  # Structured logging
+
+# Testing
+pytest>=7.3.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.10.0

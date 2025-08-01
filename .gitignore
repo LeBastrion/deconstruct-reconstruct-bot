@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# API Keys and Secrets
+.env
+*.env
+config/secrets.json
+*_credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data
+*.db
+*.sqlite
+data/
+
+# Trading specific
+backtest_results/
+live_trades/
+performance_reports/
+
+# Dependencies
+node_modules/
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
